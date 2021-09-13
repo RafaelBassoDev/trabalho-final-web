@@ -15,7 +15,7 @@
 }
 
 header{
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .container{
@@ -28,8 +28,8 @@ header{
 }
 
 .menu{
-    padding-top: 5px;
-    width: 100%;
+    padding-top: 10px;
+    width: 50%;
     text-align: right;
 }
 
@@ -45,6 +45,11 @@ header{
     transition: all 0.3s linear;
 }
 
+.logo{
+    width: 50%;
+    color: black;
+    text-align: left;
+}
 .menu a:hover,menu:focus{
     background-color: black;
     color: white;
