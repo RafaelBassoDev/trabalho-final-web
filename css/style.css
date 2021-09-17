@@ -3,7 +3,13 @@
     margin: 0;
     padding: 0; /*space between the element and the border. */
     box-sizing: border-box; /*This causes the element to maintain its actual width*/
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    @font-face {
+        font-family: 'Fette';
+        src: url('fonts/FetteUNZFraktur.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    font-family: 'Fette', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .center{
@@ -15,41 +21,37 @@
 }
 
 header{
-    padding: 20px 0;
+    padding: 25px 0;
+    background-color: #230303
 }
 
 .container{
     width: 100%;
-    height: 100vh;
-    background-color: rgb(16, 17, 16);
+    
+    background-color: #400303;
     background-position: center;
     background-size: cover;
-    padding-left: 8%;
 }
 
+
+
 .menu{
-    padding-top: 10px;
-    width: 50%;
-    text-align: right;
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
 }
 
 .menu a{
-    border: 2px solid black;
-    border-radius: 20px;
+    letter-spacing: 1.5px;
     padding: 3px 10px;
     margin-right: 15px;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s linear;
 }
 
-.logo{
-    width: 50%;
-    color: black;
-    text-align: left;
-}
 .menu a:hover,menu:focus{
     background-color: black;
     color: white;
@@ -58,6 +60,25 @@ header{
 .menu a:active{
     background-color: white;
     color: black;
+}
+
+.logo{
+    width: 100%;
+    letter-spacing: 10px;
+    color: #F2F2F2;
+    text-align: center;
+}
+
+#first_image{
+    height: 100%;
+    width: 100%;
+}
+
+.cronologia{
+    padding-top: 15px;
+    text-align: center;
+    color: #F2F2F2;
+    letter-spacing: 10px;
 }
 
 
