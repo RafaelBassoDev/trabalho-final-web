@@ -1,7 +1,8 @@
 body {
-    --color-primary: #009579;
-    --color-primary-dark: #007f67;
-    --color-secondary: #252c6a;
+    --color-primary: #400303;
+    --color-primary-light: #4e1313;
+    --color-primary-dark: #230303;
+    --color-secondary: #6F5C3F;
     --color-error: #c33;
     --color-success: #4bb544;
     --border-radius: 4px;
@@ -100,7 +101,7 @@ body {
     border-radius: var(--border-radius);
     outline: none;
     cursor: pointer;
-    background: var(--color-primary);
+    background: var(--color-primary-light);
 }
 
 .form__button:hover {
