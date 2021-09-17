@@ -4,8 +4,8 @@
     padding: 0; /*space between the element and the border. */
     box-sizing: border-box; /*This causes the element to maintain its actual width*/
     @font-face {
-        font-family: 'Fette';
-        src: url('fonts/FetteUNZFraktur.ttf') format('truetype');
+        font-family: "Fette";
+        src: url("fonts/FetteUNZFraktur.ttf") format("truetype");
         font-weight: normal;
         font-style: normal;
     }
@@ -27,13 +27,11 @@ header{
 
 .container{
     width: 100%;
-    
-    background-color: #400303;
+    background-image: url(/imagens/background.png);
     background-position: center;
     background-size: cover;
+    background-attachment: scroll;
 }
-
-
 
 .menu{
     padding-top: 15px;
