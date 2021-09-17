@@ -108,32 +108,37 @@ header{
     border: 5px solid #F2F2F2;
 }
 
+.info_desc{
+    display: inline-flex;
+}
+
 .desc_1{
     padding-top: 20px;
+    padding-left: 100px;
     color: #F2F2F2;
-    display: inline-block;
     text-align: center;
-    width: 300px;
+    width: 400px;
     height: 300px;
     letter-spacing: 3px;
 }
 
 .desc_2{
     padding-top: 20px;
+    padding-left: 100px;
     color: #F2F2F2;
-    display: inline-block;
     text-align: center;
-    width: 300px;
+    width: 400px;
     height: 300px;
     letter-spacing: 3px;
+    
 }
 
 .desc_3{
     padding-top: 20px;
+    padding-left: 100px;
     color: #F2F2F2;
-    display: inline-block;
     text-align: center;
-    width: 300px;
+    width: 400px;
     height: 300px;
     letter-spacing: 3px;  
 }
