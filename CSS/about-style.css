@@ -1,3 +1,18 @@
 body {
-    
+    --color-primary: #400303;
+    --color-primary-light: #4e1313;
+    --color-primary-dark: #230303;
+    --color-secondary: #967c55;
+    --color-error: #c33;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: var(--color-primary);
+    background-size: cover;
 }
