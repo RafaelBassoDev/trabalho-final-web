@@ -15,6 +15,8 @@ body {
     background-size: cover;
 }
 
+/* HEADER */
+
 .center{
     display: flex;
     flex-wrap: wrap; /*forced to be on the same line or can be wrapped across multiple lines.*/
@@ -63,21 +65,93 @@ header{
     text-align: center;
 }
 
+/* END: HEADER */
+
 .container {
     width: 80vw;
-    height: 1000px;
     margin: 3rem auto 3rem auto ;
-    padding: 2rem;
-    border-radius: var(--border-radius);
+}
+
+.container-selector {
+    padding: 4rem;
     background: var(--color-primary-dark);
 }
 
 .content-buttons {
     display: grid;
-    gap: 2rem;
+    justify-items: center;
+    grid-template-columns: auto auto auto;
+    margin: 1rem;
 }
 
-.button-info {
-    height: 250px;
-    width: 300px;
+.button-info,
+.button-info > button,
+.button-info > img {
+    display: block;
 }
+
+.button-info > button {
+    margin: 2rem auto 1rem auto;
+}
+
+.button-info > img {
+    width: 350px;
+    height: 350px;
+}
+
+.button-content {
+    width: 50%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color:white;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary-light);
+}
+
+.button-content:hover {
+    background: var(--color-primary);
+}
+
+.button-content:active {
+    transform: scale(0.9);
+}
+
+.container-info {
+    margin-top: 2rem;
+    padding: 4rem;
+    background: var(--color-primary-dark);
+}
+
+.content-info {
+    display: block;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1rem;
+}
+
+.info > img {
+    width: 400px;
+    height: 350px;
+}
+
+.info-text {
+    padding: 2rem;
+    color:white;
+}
+
+.info-text > h2 {
+    font-size: 1.8rem;
+}
+
+.info-text > p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
