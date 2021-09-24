@@ -2,7 +2,7 @@ body {
     --color-primary: #400303;
     --color-primary-light: #4e1313;
     --color-primary-dark: #230303;
-    --color-secondary: #6F5C3F;
+    --color-secondary: #967c55;
     --color-error: #c33;
     --color-success: #4bb544;
     --border-radius: 4px;
@@ -99,6 +99,7 @@ body {
     color:white;
     border: none;
     border-radius: var(--border-radius);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
     outline: none;
     cursor: pointer;
     background: var(--color-primary-light);
@@ -124,4 +125,58 @@ body {
 
 .form__link:hover {
     text-decoration: underline;
+}
+
+.form__checkbox-group {
+    width: 100%;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form__checkbox-inline {
+    display: grid;
+    grid-template-columns: 0.05fr 0.95fr;
+    margin-bottom: -1rem;
+}
+
+.form__checkbox {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    margin: 1.6rem 0rem 1rem 0rem; /* topo | direita | inferior | esquerda */
+    background-color: #eeeeee;
+	border: 1px solid #ddd;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.form__checkbox-label {
+    height: 1.5rem;
+    width: 100%;
+    margin: 1.5rem 0 1rem 1rem;
+    font-size: 16px;
+}
+
+.form__checkbox:active,
+.form__checkbox:checked:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.form__checkbox:checked {
+    background-color: var(--color-primary-light);
+    border: 1px solid #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+.form__checkbox:checked:after {
+    content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: -1px;
+	left: 3px;
+	color: #ffffff;
 }
