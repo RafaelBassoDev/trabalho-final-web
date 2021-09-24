@@ -10,10 +10,11 @@ body {
     margin: auto;
     display: block;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: url(/imagens/background-landing-page.jpg);
+    background: url(/imagens/background-landing-page.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position: center;
-    position: relative;
 }
 
 .container {
@@ -44,8 +45,10 @@ body {
 }
 
 .button-info > img {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    max-height: 350px;
 }
 
 .button-content {
@@ -82,17 +85,24 @@ body {
 .info {
     display: grid;
     grid-template-columns: auto auto;
+    grid-template-areas: "column-1 column-2";
     padding: 1rem;
 }
 
-.info-order-left {
-    grid-column-start: 1;
-    grid-column-end: 3;
+.info-order-left > img {
+    grid-area: column-1;
 }
 
-.info-order-right {
-    grid-column-start: 3;
-    grid-column-end: 1;
+.info-order-left > info-text {
+    grid-area: column-2;
+}
+
+.info-order-right > img {
+    grid-area: column-2;
+}
+
+.info-order-right > info-text {
+    grid-area: column-1;
 }
 
 .info > img {
