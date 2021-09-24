@@ -2,141 +2,78 @@
 *{
     margin: 0;
     padding: 0; /*space between the element and the border. */
-    box-sizing: border-box; /*This causes the element to maintain its actual width*/
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.center{
-    display: flex; 
-    flex-wrap: wrap; /*forced to be on the same line or can be wrapped across multiple lines.*/
-    max-width: 1100px;
-    margin: 0 auto; /*center the element within its container.*/
-    padding: 0 2%;
+.navbar{
+    padding: 50px;
 }
 
-header{
-    padding: 25px 0;
-    background-color: #230303
-}
-
-.container{
-    width: 100%;
-    background-image: url(/imagens/background.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: scroll;
-}
-
-.menu{
-    padding-top: 15px;
-    width: 100%;
-    text-align: center;
-}
-
-.menu a{
-    letter-spacing: 1.5px;
-    padding: 3px 10px;
-    margin-right: 15px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+.navbar-brand{
     font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s linear;
-}
-
-.menu a:hover,menu:focus{
-    background-color: black;
+    font-size: 1.5em;
+    text-transform: uppercase;
     color: white;
 }
 
-.menu a:active{
-    background-color: white;
-    color: black;
+.nav-item{
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 50px;
+    color: white;
 }
 
-.logo{
-    width: 100%;
-    letter-spacing: 10px;
-    color: #F2F2F2;
-    text-align: center;
+.nav-link{
+    letter-spacing: 2px;
+    font-size: 1em;
+    font-weight: 700;
 }
 
-.first_image{
-    height: 100%;
-    width: 100%;
+.nav-link:hover{
+    background-color: rgb(179, 24, 24) ;
+    color: gray;
+    border-radius: 5px;
+    transition: all 0.6s ease 0s;
 }
 
-.cronologia{
-    padding-top: 15px;
-    text-align: center;
-    color: #F2F2F2;
-    letter-spacing: 10px;
+#main{
+    position: relative;
+    background: url(/imagens/background-landing-page.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 280px 0 220px;
 }
 
-.section_cronologia{
-    padding-top: 10px;
-    text-align: center;
-    letter-spacing: 100px;
+#main-character{
+    position: relative;
+    background: url(/imagens/background.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0px 0 220px;
 }
 
-.first_image_section{
-    height: 250px;
-    width: 300px;
-    border-radius: 100%;
-    border: 5px solid #F2F2F2;
+#main h2{
+    font-size: 2.8em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.second_image_section{
-    height: 250px;
-    width: 300px;
-    border-radius: 100%;
-    border: 5px solid #F2F2F2;
+#main p{
+    margin-top: 1em;
+    padding: 0;
+    font-size: 16px;
+    color: white;
+    padding-bottom: 25px;
+   
 }
 
-.third_image_section{
-    height: 250px;
-    width: 300px;
-    border-radius: 100%;
-    border: 5px solid #F2F2F2;
+#main .readMore{
+    background: rgb(156, 156, 156);
+    color: white;
+    border-radius: 5px ;
+    padding-left: 10px 20px;
+    text-decoration: none;
 }
-
-.info_desc{
-    display: inline-flex;
-}
-
-.desc_1{
-    padding-top: 20px;
-    padding-left: 100px;
-    color: #F2F2F2;
-    text-align: center;
-    width: 400px;
-    height: 300px;
-    letter-spacing: 3px;
-}
-
-.desc_2{
-    padding-top: 20px;
-    padding-left: 100px;
-    color: #F2F2F2;
-    text-align: center;
-    width: 400px;
-    height: 300px;
-    letter-spacing: 3px;
-    
-}
-
-.desc_3{
-    padding-top: 20px;
-    padding-left: 100px;
-    color: #F2F2F2;
-    text-align: center;
-    width: 400px;
-    height: 300px;
-    letter-spacing: 3px;  
-}
-
-
-
-/*Notas: Basicamente padding é o espaço entre o conteúdo e a borda, 
-enquanto margin é o espaço fora da borda.*/
-

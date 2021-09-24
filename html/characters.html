@@ -1,68 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/css/style_character.css">
+    <!-- <link rel="stylesheet" href="/css/style_character.css"> -->
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Metas -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Matheus Matos, Rafael Basso">
     <meta name="keywords" content="html, css , games, site, news">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title Page -->
     <title>Characters</title>
 </head>
 <body>
-    <header>
-        <h1 class="logo">Characters</h1>
-        <div class= "center">
-            <div class="menu">
-                <a href="/html/index.html">Home</a>
-                <a href="/html/characters.html">Characters</a>
-                <a href="/html/login/login.html">Log In</a>
-                <a href="/html/login/register.html">Register</a>
-                <a href="#">About</a>
-            </div>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <img src="/imagens/logo.png" alt="" width="130" height="44" class="d-inline-block align-text-top">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/html/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/html/characters.html">Characters</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/login/login.html">Log In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/login/register.html">Register</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
-    <h2 class="title_trevor">Belmont</h2>
-    <div class="trevor">
-        <p class="desc_trevor"> 
-            Trevor C. Belmont (conhecido como Ralph C. Belmondo é o principal protagonista 
-            de Castlevania III: Dracula's Curse e Pachislot Akumajō Dracula series. 
-            Ele também desempenha o papel de deuteragonista na série principal. 
-            Ele também aparece em Castlevania: Curse of Darkness e sua adaptação cômica como personagem coadjuvante.
-            Trevor é descendente de Leon Belmont e era temido pelo povo por causa de seus poderes sobrenaturais.
-            Portanto, o Clã Belmont vivia fora da sociedade.</p>
-        <img class="trevor_img" src="/imagens/Trevor_Belmont.png" alt="Trevor_Belmont">
-    </div>
+    </nav>
 
-    <h2 class="title_alucard">Alucard</h2>
-    <div class="alucard">
-        <img class="alucard_img" src="/imagens/Alucard.png" alt="Alucard">
-        <p class="desc_alucard"> 
-            Adrian Farenheights Tepes, é um dhampir, filho de Dracula.
-            Ele escolheu adotar o nome  "Alucard" -  Dracula escrito em 
-            sentido inverso - para mostrar que representava crenças opostas
-            às de seu pai.
-            Fruto de um vínculo não natural entre Drácula e uma humana chamada
-            Lisa, Adrian tinha poderes especiais e estava destinado a ser mais 
-            forte do que qualquer humano, mas não potencialmente tão forte quanto seu pai. 
-            Depois que Lisa foi morta, tendo sido confundida com uma bruxa, Adrian cresceu sob a 
-            influência de seu pai, pelo qual ele foi ensinado nas artes escuras e moldado em um 
-            guerreiro que um dia lutaria pelo lado do mal.</p>
-    </div>
+    <!-- Container -->
+    <section id="main-character">
+        <div class="container-md">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <div class="card mb-3" style="max-width: 1540px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="/imagens/Trevor_Belmont.png" class="img-fluid rounded-start" alt="Trevor_Belmont">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Trevor Belmont</h5>
+                                <p class="card-text">
+                                  Trevor C. Belmont (conhecido como Ralph C. Belmondo é o principal protagonista 
+                                  de Castlevania III: Dracula's Curse e Pachislot Akumajō Dracula series. 
+                                  Ele também desempenha o papel de deuteragonista na série principal. 
+                                  Ele também aparece em Castlevania: Curse of Darkness e sua adaptação cômica como personagem coadjuvante.
+                                  Trevor é descendente de Leon Belmont e era temido pelo povo por causa de seus poderes sobrenaturais.
+                                  Portanto, o Clã Belmont vivia fora da sociedade.       
+                                </p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
 
-    <h2 class="title_sypha">Sypha</h2>
-    <div class="sypha">
-        <p class="desc_sypha"> 
-            Sypha Belnades é uma personagem recorrente na série Castlevania. Ela é uma bruxa da 
-            região da Valáquia, onde inicialmente teve que esconder sua identidade se passando 
-            por homem para escapar dos julgamentos das bruxas da época. Ela foi apresentada à 
-            série como uma das quatro protagonistas do jogo Castlevania III: Dracula's Curse, 
-            de 1989-90, e desde então apareceu ou foi mencionada em várias sequências e mídias
-            relacionadas. Ao final da Maldição do Drácula, seu verdadeiro gênero foi finalmente
-            revelado e não muito depois que ela e Trevor Belmont se casaram, preservando com 
-            isso a linhagem Belmont e aumentando sua linhagem com os poderes mágicos do Clã Belnades.</p>
-            <img class="sypha_img" src="/imagens/Sypha.png" alt="Sypha">
-    </div>
+              <div class="row">
+                  <div class="col">
+                      <div class="card mb-3" style="max-width: 1540px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="/imagens/Alucard.png" class="img-fluid rounded-start" alt="Alucard">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Alucard</h5>
+                                <p class="card-text">
+                                  Adrian Farenheights Tepes, é um dhampir, filho de Dracula.
+                                  Ele escolheu adotar o nome  "Alucard" -  Dracula escrito em 
+                                  sentido inverso - para mostrar que representava crenças opostas
+                                  às de seu pai.
+                                  Fruto de um vínculo não natural entre Drácula e uma humana chamada
+                                  Lisa, Adrian tinha poderes especiais e estava destinado a ser mais 
+                                  forte do que qualquer humano, mas não potencialmente tão forte quanto seu pai. 
+                                  Depois que Lisa foi morta, tendo sido confundida com uma bruxa, Adrian cresceu sob a 
+                                  influência de seu pai, pelo qual ele foi ensinado nas artes escuras e moldado em um 
+                                  guerreiro que um dia lutaria pelo lado do mal.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col">
+                      <div class="card mb-3" style="max-width: 1540px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="/imagens/Sypha.png" class="img-fluid rounded-start" alt="Sypha">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Sypha</h5>
+                                <p class="card-text">
+                                  Sypha Belnades é uma personagem recorrente na série Castlevania. Ela é uma bruxa da 
+                                  região da Valáquia, onde inicialmente teve que esconder sua identidade se passando 
+                                  por homem para escapar dos julgamentos das bruxas da época. Ela foi apresentada à 
+                                  série como uma das quatro protagonistas do jogo Castlevania III: Dracula's Curse, 
+                                  de 1989-90, e desde então apareceu ou foi mencionada em várias sequências e mídias
+                                  relacionadas. Ao final da Maldição do Drácula, seu verdadeiro gênero foi finalmente
+                                  revelado e não muito depois que ela e Trevor Belmont se casaram, preservando com 
+                                  isso a linhagem Belmont e aumentando sua linhagem com os poderes mágicos do Clã Belnades.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    
+    
+   
 
 
 </body>

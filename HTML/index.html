@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,62 +11,59 @@
     <title>Castlevania-Site</title>
 </head>
 <body>
-    <header>
-        <h1 class="logo">Castlevania</h1>
-        <div class= "center">
-            <div class="menu">
-                <a href="/html/index.html">Home</a>
-                <a href="/html/characters.html">Characters</a>
-                <a href="/html/login/login.html">Log In</a>
-                <a href="/html/login/register.html">Register</a>
-                <a href="#">About</a>
-            </div>
-        </div><!--Center-->
-    </header>
+  <!-- Header Section -->
+  <section id="header">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <img src="/imagens/logo.png" alt="" width="130" height="44" class="d-inline-block align-text-top">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/html/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/characters.html">Characters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/login/login.html">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/login/register.html">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section id="main">
     <div class="container">
-        <img class="first_image" src="/imagens/Castlevania-bg.jpg" alt="Castlevania-bg">
-        <h2 class="cronologia"> Cronologia Saga Principal <br> Conheça os principais jogos da série.</h2><br>
-        <div class="section_cronologia">
-            <img class="first_image_section"  src="/imagens/Castlevania Rondo of Blood.png" alt="Castlevania Rondo of Blood">
-            <img class="second_image_section" src="/imagens/Castlevania Dawn of Sorrow.jpg" alt="Castlevania Dawn of Sorrow">
-            <img class="third_image_section"  src="/imagens/Castlevania Symphony of the night.png" alt="Castlevania Symphony of the night">
+      <div class="row">
+        <div class="col-sn-12 col-md-6">
+          <h2> History </h2>
+          <p> 
+            Inspirado na clássica série de videogames, Castlevania
+            é uma fantasia medieval sombria que segue o último 
+            sobrevivente do clã Belmont, tentando salvar a Europa Oriental 
+            da extinção pelas mãos do próprio Vlad Tepes Drácula.
+          </p>
+          <a href="/html/characters.html">
+            <button type="button" class="btn btn-outline-light">Read More</button>
+          </a>
         </div>
-
-        <div class="info_desc">
-            <div class="desc_1">
-                <p>
-                    Apesar de não ser o primeiro, Castlevania:
-                    Rondo of Blood talvez seja o jogo da saga mais popular 
-                    entre os fãs mais antigos. Ele saiu pela primeira vez em 
-                    1993 para o saudoso console TurboGrafx-16 e só anos depois, 
-                    já em 1995, ganhou uma versão com gráficos e desafios 
-                    simplificados no Super Nintendo.
-                </p>  
-            </div>
-            <div class="desc_2">
-                <p>
-                    Castlevania: Dawn of Sorrow é outro elogiado game da 
-                    série lançado no Nintendo DS, desta vez em 2005.
-                    Na aventura controlamos Soma Cruz, herói que surgiu em 
-                    outro jogo, lançado ainda nos tempos de GBA – Aria of Sorrow.
-                </p> 
-            </div>
-            <div class="desc_3">
-                <p>
-                    Castlevania: Symphony of the Night é o grande jogo que
-                    definiu Castlevania durante muito tempo. Lançado em 
-                    1997 no PSOne e também no Sega Saturn, até hoje é 
-                    lembrado como o melhor de toda a série, desde os seus 
-                    primórdios aos jogos mais recentes.
-                </p> 
-            </div>
-        </div>
-
-        
+      </div>
     </div>
-    
+  </section>
 
-
     
+   
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
