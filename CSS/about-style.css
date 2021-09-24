@@ -136,6 +136,16 @@ header{
     padding: 1rem;
 }
 
+.info-order-left {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.info-order-right {
+    grid-column-start: 3;
+    grid-column-end: 1;
+}
+
 .info > img {
     width: 400px;
     height: 350px;
@@ -154,4 +164,3 @@ header{
     font-size: 1rem;
     text-align: justify;
 }
-
