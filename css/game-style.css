@@ -10,8 +10,10 @@ body {
     margin: auto;
     display: block;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: var(--color-primary);
+    background: url(/imagens/background-landing-page.jpg);
     background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .container {
