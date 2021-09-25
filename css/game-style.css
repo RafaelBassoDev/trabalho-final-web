@@ -10,16 +10,31 @@ body {
     margin: auto;
     display: block;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: url(/imagens/background-landing-page.jpg) no-repeat center center fixed;
+    background: url(/imagens/background-character-page.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
+h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    color:white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+hr.solid {
+    display: block;
+    border-top: 2px solid red;
+    margin: 2rem auto;
+    width: 50%;
+}
+
 .container {
     width: 80vw;
-    margin: 3rem auto 3rem auto ;
+    margin: 3rem auto;
 }
 
 .container-selector {
@@ -122,4 +137,20 @@ body {
 .info-text > p {
     font-size: 1rem;
     text-align: justify;
+}
+
+.container-video {
+    margin-top: 2rem;
+    padding: 4rem;
+    background: var(--color-primary-dark);
+}
+
+.content-video {
+    display: block;
+    justify-items: center;
+}
+
+.content-video > iframe {
+    display: block;
+    margin: auto;
 }
