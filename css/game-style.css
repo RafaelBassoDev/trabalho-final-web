@@ -2,19 +2,27 @@ body {
     --color-primary: #400303;
     --color-primary-light: #4e1313;
     --color-primary-dark: #230303;
-    --color-secondary: #967c55;
-    --color-error: #c33;
-    --color-success: #4bb544;
+    --color-primary-dark-faded: #000000b4;
+    --color-secondary-light: #c33;
     --border-radius: 4px;
 
     margin: auto;
     display: block;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: url(/imagens/background-character-page.jpg) no-repeat center center fixed;
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(/imagens/background-game-page.jpg) center/contain no-repeat fixed;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    z-index: -1;
 }
 
 h1 {
@@ -27,19 +35,24 @@ h1 {
 
 hr.solid {
     display: block;
-    border-top: 2px solid red;
+    border-top: 2px solid #da0000;
+    opacity: 1;
     margin: 2rem auto;
     width: 50%;
 }
 
-.container {
+.wrapper {
     width: 80vw;
     margin: 3rem auto;
 }
 
+.container {
+    background: var(--color-primary-dark-faded);
+    border-radius: var(--border-radius);
+}
+
 .container-selector {
     padding: 4rem;
-    background: var(--color-primary-dark);
 }
 
 .content-buttons {
@@ -72,11 +85,11 @@ hr.solid {
     font-weight: bold;
     font-size: 0.9rem;
     color:white;
-    border: none;
+    border: 1px solid var(--color-secondary-light);
     border-radius: var(--border-radius);
     outline: none;
     cursor: pointer;
-    background: var(--color-primary-light);
+    background: var(--color-primary-dark);
 }
 
 .button-content:hover {
@@ -90,11 +103,34 @@ hr.solid {
 .container-info {
     margin-top: 2rem;
     padding: 4rem;
-    background: var(--color-primary-dark);
 }
 
 .content-info {
     display: block;
+    margin: 1rem;
+}
+
+.content-info-header {
+    font-size: 4rem;
+}
+
+.content-story {
+    margin: 4rem 2rem 2rem;
+}
+
+.content-story > h2 {
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: var(--color-secondary-light);
+    text-align: start;
+}
+
+.content-story > .info-paragraph {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: lighter;
+    text-align: start;
 }
 
 .info {
@@ -131,23 +167,26 @@ hr.solid {
 }
 
 .info-text > h2 {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: var(--color-secondary-light);
 }
 
 .info-text > p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
     text-align: justify;
 }
 
 .container-video {
     margin-top: 2rem;
     padding: 4rem;
-    background: var(--color-primary-dark);
 }
 
 .content-video {
     display: block;
     justify-items: center;
+    margin: 1rem;
 }
 
 .content-video > iframe {
