@@ -37,7 +37,7 @@ hr.solid {
     display: block;
     border-top: 2px solid #da0000;
     opacity: 1;
-    margin: 2rem auto;
+    margin: 2rem auto 4rem;
     width: 50%;
 }
 
@@ -116,7 +116,7 @@ hr.solid {
 }
 
 .content-story {
-    margin: 4rem 2rem 2rem;
+    margin: 0 2rem 2rem;
 }
 
 .content-story > h2 {
