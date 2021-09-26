@@ -66,6 +66,7 @@ hr.solid {
 .button-info > button,
 .button-info > img {
     display: block;
+    margin: 0.8rem 0;
 }
 
 .button-info > button {
